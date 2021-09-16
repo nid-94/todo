@@ -16,7 +16,7 @@ const AddTodo = () => {
             <input
                 size="small"
                 placeholder="add task here"
-                style={{ width: "50%" }}
+                style={{ width:"500px"}}
                 ref={addRef}
             />
             <Button
