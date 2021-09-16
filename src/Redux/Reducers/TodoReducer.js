@@ -36,7 +36,7 @@ const toDoReducer = (state = initialState, action) => {
             return {
                 ...state,
                 toDo: state.toDo.map((el) =>
-                    el.id == payload ? { ...el, Done: !state.Done } : el
+                    el.id == payload ? { ...el, Done: !el.Done } : el
                 ),
             };
 

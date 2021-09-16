@@ -13,7 +13,7 @@ const TodoItem = ({ todo }) => {
                 <Edit id={todo.id} />
                 <Button.Or />
                 <Button positive onClick={() => dispatch(doneTodo(todo.id))}>
-                    Done
+                    {todo.Done?"undone":"done"}
                 </Button>
                 <Button.Or />
                 <Button
