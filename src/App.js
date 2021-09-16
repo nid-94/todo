@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <h1>To do list</h1>
       <AddTodo/>
-      <br />
       <TodoList/>
     </div>
   );

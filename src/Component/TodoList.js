@@ -9,6 +9,7 @@ const TodoList = () => {
     const todolist = useSelector((state) => state.ToDo.toDo);
     return (
         <div>
+            <br />
             <Button.Group>
                 <Button onClick={()=>setStatus("all")}>All</Button>
                 <Button.Or />
@@ -16,7 +17,6 @@ const TodoList = () => {
                 <Button.Or />
                 <Button onClick={()=>setStatus("undone")}>Undone</Button>
             </Button.Group>
-            <br />
             {status === "all"
                 ? todolist.map((todo, i) => <TodoItem todo={todo} key={i} />)
                 : status == "done"
