@@ -1,6 +1,5 @@
 import {
     ADD_TODO,
-    DELETE_TODO,
     EDIT_TODO,
     DONE_TODO,
 } from "../Actions/actionType";
@@ -20,11 +19,7 @@ const toDoReducer = (state = initialState, action) => {
     switch (type) {
         case ADD_TODO:
             return { ...state, toDo: [...state.toDo, payload] };
-        case DELETE_TODO:
-            return {
-                ...state,
-                toDo: state.toDo.filter((el) => el.id !== payload),
-            };
+
         case EDIT_TODO:
             return {
                 ...state,
