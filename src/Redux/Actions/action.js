@@ -1,4 +1,4 @@
-import { ADD_TODO,DELETE_TODO,EDIT_TODO,DONE_TODO } from "./actionType";
+import { ADD_TODO,EDIT_TODO,DONE_TODO } from "./actionType";
 
 const addtodo = (newItem) => {
     return {
@@ -10,12 +10,7 @@ const addtodo = (newItem) => {
 export default addtodo;
 
 
-export const deleteTodo = (id) => {
-    return {
-        type: DELETE_TODO,
-        payload: id,
-    };
-};
+
 
 export const editTodo= (payload) => {
     return {
